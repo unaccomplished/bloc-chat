@@ -12,8 +12,7 @@
 
           modalInstance.result.then(function (roomName) {
             Room.addRoom(roomName);
-          }, function () {
-          });
+          })
         };
     }
 
