@@ -1,0 +1,10 @@
+<div>
+  <h1>Bloc Chat</h1>
+
+
+  <div ng-repeat="room in $ctrl.rooms">
+      <p>{{ room.$value }}</p>
+  </div>
+  <!-- Add a button to call openModal $ctrl.openComponentModal -->
+  <button class="btn btn-default" type="button" ng-click="$ctrl.openComponentModal()">New Room</button>
+</div>

@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <title>Bloc Chat</title>
     <link rel="stylesheet" href="/styles/style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <body>
     <ui-view></ui-view>
 
-    <!-- Angular -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <!-- Dependencies -->
+    <script src="//www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
+    <script src="//cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-animate.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-sanitize.js"></script>
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.5.0.js"></script>
 
-    <!-- AngularFire -->
-    <script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
-
-    <!-- Firebase -->
-    <script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
+    <!-- Firebase Config -->
     <script>
-      // Initialize Firebase
       var config = {
         apiKey: "AIzaSyCRBm9j7pqfEb19n4_Eg6Qds2iEjWCG2cA",
         authDomain: "bloc-chat-57d35.firebaseapp.com",
@@ -28,9 +30,11 @@
       firebase.initializeApp(config);
     </script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+
+    <!-- App -->
     <script src="/scripts/app.js"></script>
-    <script src="/scripts/controllers/HomeCtrl.js"></script>
     <script src="/scripts/services/Room.js"></script>
+    <script src="/scripts/views/home/HomeCtrl.js"></script>
+    <script src="/scripts/components/addRoom/AddRoomModal.js"></script>
 </body>
 </html>
