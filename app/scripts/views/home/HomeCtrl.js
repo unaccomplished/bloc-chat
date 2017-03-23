@@ -13,7 +13,6 @@
           modalInstance.result.then(function (roomName) {
             Room.addRoom(roomName);
           }, function () {
-            $log.info('modal-component dismissed at: ' + new Date());
           });
         };
     }
