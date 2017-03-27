@@ -2,23 +2,18 @@
     var messagesContainer = {
       templateUrl: '../scripts/components/messagesContainer/messages-container.html',
       bindings: {
-        resolve: '<',
-        close: '&',
-        dismiss: '&'
+        roomId: '='
       },
       controller: messagesContainerCtrl
     }
 
     function messagesContainerCtrl() {
-      var $ctrl = this;
+      var $ctrl = this; //required for all components
 
-      // $ctrl.ok = function () {
-      //   $ctrl.close({$value: $ctrl.roomName});
-      // };
-      //
-      // $ctrl.cancel = function () {
-      //   $ctrl.dismiss({$value: 'cancel'});
-      // };
+      $ctrl.$onChange = onChange;
+      function onChange() {
+          $ctrl.messages = Message.getByRoomId($ctrl.roomId);
+      }
     }
 
     angular
