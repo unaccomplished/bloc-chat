@@ -1,3 +1,5 @@
 <div class="messages-container" ng-show="$ctrl.messages">
-  {{ $ctrl.messages }}
+    <div class="user-name" ng-repeat-start="message in $ctrl.messages">{{ message.username }}</div>
+    <div class="message-content">{{ message.content }}</div>
+    <div class="sent-at" ng-repeat-end>{{ message.sentAt }}</div>
 </div>

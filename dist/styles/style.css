@@ -3,7 +3,7 @@
 
 
 .messages-container {
-  color: blue;
+
 }
 
 .left-side {
@@ -14,4 +14,8 @@
 
 .right-side {
 
+}
+
+.sent-at {
+  float: right;
 }
