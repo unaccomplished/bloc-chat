@@ -15,8 +15,8 @@
           })
         };
 
-        $ctrl.showRoom = function(roomName) {
-            Room.getByRoomId(roomName);
+        $ctrl.showRoom = function(roomId) {
+          $ctrl.currentRoomId = roomId;
         };
     }
 

@@ -2,17 +2,20 @@
     var messagesContainer = {
       templateUrl: '../scripts/components/messagesContainer/messages-container.html',
       bindings: {
-        roomId: '='
+        roomId: '<'
       },
       controller: messagesContainerCtrl
     }
 
-    function messagesContainerCtrl() {
+    function messagesContainerCtrl(Message) {
       var $ctrl = this; //required for all components
 
-      $ctrl.$onChange = onChange;
-      function onChange() {
+      $ctrl.$onChanges = onChanges;
+
+      function onChanges() {
+        if($ctrl.roomId) {
           $ctrl.messages = Message.getByRoomId($ctrl.roomId);
+        }
       }
     }
 
