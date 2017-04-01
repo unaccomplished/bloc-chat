@@ -14,6 +14,10 @@
             Room.addRoom(roomName);
           })
         };
+
+        $ctrl.showRoom = function(roomName) {
+            Room.getByRoomId(roomName);
+        };
     }
 
     angular
