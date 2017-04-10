@@ -14,6 +14,11 @@
             Room.addRoom(roomName);
           })
         };
+
+        $ctrl.showRoom = function(room) {
+          // Updated this to just be the room so we could access the name as well
+          $ctrl.currentRoom = room;
+        };
     }
 
     angular

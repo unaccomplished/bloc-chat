@@ -1,1 +1,21 @@
-/*@import '../views/home/home.css';*/
+@import '../views/home/_home.css';
+@import '../components/messagesContainer/_messages-container.css';
+
+
+.messages-container {
+
+}
+
+.left-side {
+  float: left;
+  width: 30%;
+  background-color: lightgrey;
+}
+
+.right-side {
+
+}
+
+.sent-at {
+  float: right;
+}
