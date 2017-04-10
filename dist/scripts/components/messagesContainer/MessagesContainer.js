@@ -2,7 +2,8 @@
     var messagesContainer = {
       templateUrl: '../scripts/components/messagesContainer/messages-container.html',
       bindings: {
-        roomId: '<'
+        roomId: '<',
+        roomName: '<' // Added roomName here, can be accessed using $ctrl.roomName
       },
       controller: messagesContainerCtrl
     }

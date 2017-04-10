@@ -2,13 +2,13 @@
   <div class="left-side">
     <h1 class="title-header">Bloc Chat</h1>
     <button class="btn btn-default" type="button" ng-click="$ctrl.openComponentModal()">New Room</button>
-    <div ng-repeat="room in $ctrl.rooms" ng-click="$ctrl.showRoom(room.$id)">
+    <div ng-repeat="room in $ctrl.rooms" ng-click="$ctrl.showRoom(room)">
         <p>{{ room.$value }}</p>
     </div>
 
   </div>
 
   <div class="right-side">
-    <messages-container room-id="$ctrl.currentRoomId"></messages-container>
+    <messages-container room-id="$ctrl.currentRoom.$id" room-name="$ctrl.currentRoom.$value"></messages-container>
   </div>
 </div>

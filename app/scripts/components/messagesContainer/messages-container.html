@@ -1,5 +1,12 @@
 <div class="messages-container" ng-show="$ctrl.messages">
-    <div class="user-name" ng-repeat-start="message in $ctrl.messages">{{ message.username }}</div>
-    <div class="message-content">{{ message.content }}</div>
-    <div class="sent-at" ng-repeat-end>{{ message.sentAt }}</div>
+    <div class="room-name">{{$ctrl.roomName}}</div>
+
+    <!-- I updated it to a table format, you still need to add the bootstrap class for the styling -->
+    <table>
+      <tr ng-repeat="message in $ctrl.messages">
+        <td class="user-name">{{message.username}}</td>
+        <td class="message-content">{{message.content}}</td>
+        <td class="sent-at">{{message.sentAt}}</td>
+      </tr>
+    </table>
 </div>
