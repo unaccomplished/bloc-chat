@@ -16,6 +16,7 @@
     }
 
     angular
-        .module('blocChat', ['ui.router', 'firebase', 'ui.bootstrap'])
+        // You forgot to add 'ngCookies' to the app as a whole! 
+        .module('blocChat', ['ui.router', 'firebase', 'ui.bootstrap', 'ngCookies'])
         .config(config);
 })();
