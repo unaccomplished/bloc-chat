@@ -8,7 +8,8 @@
             });
 
             modalInstance.result.then(function (username) {
-              // Updates to Username go here
+              currentUser = $cookies.put('blocChatCurrentUser', username)
+              // Updates to Username go here ==> update cookies and set the username
             })
         }
     }
@@ -17,3 +18,7 @@
         .module('blocChat')
         .run(['$cookies', '$uibModal', BlocChatCookies]);
 })();
+
+// var allTheCookies = {
+//   blocChatCurrentUser:'myusername'
+// }

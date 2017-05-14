@@ -1,5 +1,11 @@
 <div class="messages-container" ng-show="$ctrl.messages">
-    <div class="user-name" ng-repeat-start="message in $ctrl.messages">{{ message.username }}</div>
-    <div class="message-content">{{ message.content }}</div>
-    <div class="sent-at" ng-repeat-end>{{ message.sentAt }}</div>
+    <div class="room-name">{{$ctrl.currentRoomName}}</div>
+
+    <table class="table table-striped">
+      <tr ng-repeat="message in $ctrl.messages">
+        <td class="user-name">{{message.username}}</td>
+        <td class="message-content">{{message.content}}</td>
+        <td class="sent-at">{{message.sentAt}}</td>
+      </tr>
+    </table>
 </div>
