@@ -13,6 +13,9 @@
       var $ctrl = this;
 
       $ctrl.ok = function () {
+        // conditonal to check the username for whitespace or empty
+        // in the else display an acutal error messge to the user, dont use an alert
+        // "display error message to user angularjs"
         $ctrl.close({$value: $ctrl.username});
       };
     }

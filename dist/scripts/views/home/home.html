@@ -1,6 +1,7 @@
 <div>
   <div class="left-side">
-    <h1 class="title-header">Bloc Chat</h1>
+    <h1 class="title-header">Bloc Chat {{$ctrl.currentUser}}</h1>
+    <button class="btn btn-default" type="button" ng-click="$ctrl.logout()">Log out</button>
     <button class="btn btn-default" type="button" ng-click="$ctrl.openComponentModal()">New Room</button>
     <div ng-repeat="room in $ctrl.rooms" ng-click="$ctrl.showRoom(room.$id)">
         <p>{{ room.$value }}</p>
