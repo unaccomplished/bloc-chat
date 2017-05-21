@@ -12,11 +12,15 @@
     function setUsernameModalCtrl() {
       var $ctrl = this;
 
-      $ctrl.ok = function () {
+      $ctrl.ok = function(username) {
         // conditonal to check the username for whitespace or empty
         // in the else display an acutal error messge to the user, dont use an alert
         // "display error message to user angularjs"
-        $ctrl.close({$value: $ctrl.username});
+        if ($ctrl.username !== "") {
+          $ctrl.close({$value: $ctrl.username});
+        } else {
+          $ctrl.errorMessage = "Username must include characters";
+        }
       };
     }
 

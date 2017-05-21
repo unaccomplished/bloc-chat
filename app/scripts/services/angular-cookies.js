@@ -7,6 +7,8 @@
             //Do something to allow users to set their username
             var modalInstance = $uibModal.open({
               component: 'setUsernameModal',
+              backdrop: 'static',
+              keyboard: false
               //options for not letting the modal close
             });
 
