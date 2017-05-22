@@ -9,14 +9,14 @@
 
     function sendMessageCtrl(Message) {
       var $ctrl = this; //required for all components
-      // 
-      // $ctrl.$onChanges = onChanges;
-      //
-      // function onChanges() {
-      //   if($ctrl.roomId) {
-      //     $ctrl.messages = Message.getByRoomId($ctrl.roomId);
-      //   }
-      // }
+
+      $ctrl.newMessage = null;
+      $ctrl.send = send;
+
+      function send() {
+        Message.send($ctrl.newMessage);
+        $ctrl.newMessage = null;
+      }
     }
 
     angular

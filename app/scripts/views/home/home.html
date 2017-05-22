@@ -9,7 +9,8 @@
 
   </div>
 
-  <div class="right-side">
+  <div class="right-side" ng-if="$ctrl.currentRoomId">
     <messages-container room-id="$ctrl.currentRoomId"></messages-container>
+    <send-message room-id="$ctrl.currentRoomId"></send-message>
   </div>
 </div>
