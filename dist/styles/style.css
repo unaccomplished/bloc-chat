@@ -1,21 +1,68 @@
-@import '../views/home/_home.css';
-@import '../components/messagesContainer/_messages-container.css';
+@import '../scripts/views/home/_home.css';
+@import '../scripts/components/messagesContainer/_messages-container.css';
+@import '../scripts/components/setUsernameModal/_set-username-modal.css';
+@import '../scripts/components/sendMessage/_send-message.css';
+@import '../scripts/components/addRoom/_add-room-modal.css';
 
+.error-message {
+  color: red;
+}
 
-/*.messages-container {
+/* How to place this next to "Welcome username"?
+.logout-button {
+  float: right;
+}*/
 
+.room-names {
+  color: grey;
+}
+.newroom-button {
+  float: left;
+}
+.messages-container {
+
+}
+
+.home {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .left-side {
-  float: left;
-  width: 30%;
   background-color: lightgrey;
+  padding: 15px;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  overflow-x: scroll;
 }
 
 .right-side {
-
+  height: 100%;
+  overflow-x: scroll;
+  position: relative;
 }
 
+.send-message {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.message-box {
+  float: left;
+  width: 90%;
+}
+
+.send-button {
+  float: right;
+}
+
+/* How to make messages container look like wireframe?
 .sent-at {
   float: right;
 }*/

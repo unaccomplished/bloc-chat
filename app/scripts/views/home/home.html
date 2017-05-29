@@ -1,16 +1,17 @@
-<div>
+<div class="home">
   <div class="left-side">
-    <h1 class="title-header">Bloc Chat {{$ctrl.currentUser}}</h1>
-    <button class="btn btn-default" type="button" ng-click="$ctrl.logout()">Log out</button>
-    <button class="btn btn-default" type="button" ng-click="$ctrl.openComponentModal()">New Room</button>
-    <div ng-repeat="room in $ctrl.rooms" ng-click="$ctrl.showRoom(room.$id)">
+    <h1 class="title-header">Bloc Chat</h1>
+    <h4 class="welcome-user">Welcome {{$ctrl.currentUser}}</h4>
+    <button class="btn btn-default logout-button" type="button" ng-click="$ctrl.logout()">Log out</button>
+    <button class="btn btn-default newroom-button" type="button" ng-click="$ctrl.openComponentModal()">New Room</button>
+    <div class="room-names" ng-repeat="room in $ctrl.rooms" ng-click="$ctrl.showRoom(room)">
         <p>{{ room.$value }}</p>
     </div>
 
   </div>
 
-  <div class="right-side" ng-if="$ctrl.currentRoomId">
-    <messages-container room-id="$ctrl.currentRoomId"></messages-container>
-    <send-message room-id="$ctrl.currentRoomId"></send-message>
+  <div class="right-side" ng-if="$ctrl.currentRoom">
+    <messages-container room="$ctrl.currentRoom"></messages-container>
+    <send-message room-id="$ctrl.currentRoom.$id"></send-message>
   </div>
 </div>

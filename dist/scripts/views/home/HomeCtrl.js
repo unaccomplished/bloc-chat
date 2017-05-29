@@ -28,13 +28,17 @@
             component: 'AddRoomModal'
           });
 
-          modalInstance.result.then(function (roomName) {
-            Room.addRoom(roomName);
-          })
+          modalInstance.result
+            .then(function (roomName) {
+              Room.addRoom(roomName);
+            })
+            .catch(function() {
+               // Do Nothings
+            });
         };
 
-        $ctrl.showRoom = function(roomId) {
-          $ctrl.currentRoomId = roomId;
+        $ctrl.showRoom = function(room) {
+          $ctrl.currentRoom = room;
         };
     }
 

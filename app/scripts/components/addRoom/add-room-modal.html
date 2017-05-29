@@ -4,6 +4,7 @@
 <div class="modal-body" id="modal-body">
    <label>Enter a room name:
      <input type="text" name="input" ng-model="$ctrl.roomName">
+     <span class="error-message">{{ $ctrl.errorMessage }}</span>
    </label>
 </div>
 <div class="modal-footer">

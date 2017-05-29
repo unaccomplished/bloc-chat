@@ -2,7 +2,7 @@
     var messagesContainer = {
       templateUrl: '../scripts/components/messagesContainer/messages-container.html',
       bindings: {
-        roomId: '<'
+        room: '='
       },
       controller: messagesContainerCtrl
     }
@@ -13,8 +13,8 @@
       $ctrl.$onChanges = onChanges;
 
       function onChanges() {
-        if($ctrl.roomId) {
-          $ctrl.messages = Message.getByRoomId($ctrl.roomId);
+        if($ctrl.room) {
+          $ctrl.messages = Message.getByRoomId($ctrl.room.$id);
         }
       }
     }
