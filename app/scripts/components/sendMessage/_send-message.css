@@ -1,0 +1,15 @@
+.send-message {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.message-box {
+  float: left;
+  width: 90%;
+}
+
+.send-button {
+  float: right;
+}

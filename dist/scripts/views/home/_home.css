@@ -1,3 +1,42 @@
 .home {
-  color: blue;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.left-side {
+  background-color: lightgrey;
+  padding: 15px;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  overflow-x: scroll;
+}
+
+.right-side {
+  height: 100%;
+  overflow-x: scroll;
+  position: relative;
+}
+
+/*This makes button squish when overflow-x scroll is engaged*/
+.title-header-button {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.user-login {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.newroom-button {
+
+}
+
+.room-names {
+  color: grey;
 }
