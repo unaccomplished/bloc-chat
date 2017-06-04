@@ -11,6 +11,7 @@
   padding: 15px;
   display: flex;
   height: 100%;
+  width: 30vw;
   flex-direction: column;
   overflow-x: scroll;
 }
@@ -19,10 +20,11 @@
   height: 100%;
   overflow-x: scroll;
   position: relative;
+  width: 70vw;
 }
 
 /*This makes button squish when overflow-x scroll is engaged*/
-.title-header-button {
+/* .title-header-button {
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
@@ -32,10 +34,7 @@
   display: flex;
   justify-content: flex-start;
 }
-
-.newroom-button {
-
-}
+ */
 
 .room-names {
   color: grey;

@@ -1,1 +1,28 @@
+.message-table {
+  display: flex;
+  flex-direction: column;
+}
 
+.message-stripe:nth-child(2n+1) {
+  background: whitesmoke;
+}
+
+.message-stripe {
+  display: flex;
+  justify-content: space-between;
+}
+
+.name-content {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.user-name {
+  font-weight: bold;
+}
+
+.sent-at {
+  color: grey;
+  padding: 15px;
+}
