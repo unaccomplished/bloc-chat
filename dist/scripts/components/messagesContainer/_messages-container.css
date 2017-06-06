@@ -1,3 +1,7 @@
+.room-name {
+  padding: 20px 30px;
+}
+
 .message-table {
   display: flex;
   flex-direction: column;
@@ -15,7 +19,7 @@
 .name-content {
   display: flex;
   flex-direction: column;
-  padding: 15px;
+  padding: 15px 30px;
 }
 
 .user-name {
@@ -24,5 +28,5 @@
 
 .sent-at {
   color: grey;
-  padding: 15px;
+  padding: 15px 30px;
 }

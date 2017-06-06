@@ -9,3 +9,18 @@
 .message-box {
   width: 90vw;
 }
+
+.message-input {
+  width: 100%;
+  padding: 12px;
+  border-style: solid;
+  border-color: gainsboro;
+  background: whitesmoke;
+}
+
+.send-button {
+  background-color: darkslategrey;
+  color: white;
+  border: none;
+  padding: 13px 25px;
+}

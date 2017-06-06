@@ -1,0 +1,39 @@
+.add-room-modal {
+  display: flex;
+  flex-direction: column;
+  background-color: lightgrey;
+  padding: 30px;
+}
+
+.room-modal-body {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0px;
+}
+
+input {
+  padding: 8px;
+}
+
+label {
+  color: grey;
+  font-weight: normal;
+}
+
+.room-modal-footer {
+  display: flex;
+}
+
+.cancel-button {
+  background-color: whitesmoke;
+  border: none;
+  padding: 10px 30px;
+  color: grey;
+}
+
+.create-room-button {
+  background-color: grey;
+  border: none;
+  padding: 10px 30px;
+  color: white;
+}
