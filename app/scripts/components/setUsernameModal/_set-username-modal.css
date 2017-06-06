@@ -1,0 +1,23 @@
+.set-username-modal {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgrey;
+    padding: 30px;
+}
+
+.username-modal-body {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0px;
+}
+
+.username-modal-body text {
+    color: grey;
+}
+
+.set-username-button {
+    background-color: grey;
+    border: none;
+    padding: 10px 30px;
+    color: white;
+}

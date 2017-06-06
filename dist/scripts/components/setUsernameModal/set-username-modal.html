@@ -1,12 +1,13 @@
-<div class="modal-header">
-   <h3 class="modal-title" id="modal-title">Set a username</h3>
-</div>
-<div class="modal-body" id="modal-body">
-   <label>This name will appear when you send messages
-     <input type="text" name="input" ng-model="$ctrl.username">
-     <span class="error-message">{{ $ctrl.errorMessage }}</span>
-   </label>
-</div>
-<div class="modal-footer">
-   <button class="btn btn-primary" type="button" ng-click="$ctrl.ok()">Set username</button>
+<div class="set-username-modal">
+  <div class="username-modal-header">
+     <h3 class="modal-title" id="modal-title">Set a username</h3>
+  </div>
+  <div class="username-modal-body" id="modal-body">
+     <text>This name will appear when you send messages</text>
+       <input type="text" name="input" ng-model="$ctrl.username">
+       <span class="error-message">{{ $ctrl.errorMessage }}</span>
+  </div>
+  <div class="username-modal-footer">
+     <button class="set-username-button" type="button" ng-click="$ctrl.ok()">Set username</button>
+  </div>
 </div>

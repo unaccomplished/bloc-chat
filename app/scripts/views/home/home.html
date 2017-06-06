@@ -2,11 +2,11 @@
   <div class="left-side">
     <div class="title-header-button">
       <h1 class="title-header">Bloc Chat</h1>
-      <button class="btn btn-default newroom-button" type="button" ng-click="$ctrl.openComponentModal()">New Room</button>
+      <button class="left-side-button" type="button" ng-click="$ctrl.openComponentModal()">New room</button>
     </div>
     <div class="user-login">
       <h4 class="welcome-user">Welcome {{$ctrl.currentUser}}</h4>
-      <button class="btn btn-default logout-button" type="button" ng-click="$ctrl.logout()">Log out</button>
+      <button class="left-side-button" type="button" ng-click="$ctrl.logout()">Log out</button>
     </div>
     <div class="room-names" ng-repeat="room in $ctrl.rooms" ng-click="$ctrl.showRoom(room)">
         <p>{{ room.$value }}</p>

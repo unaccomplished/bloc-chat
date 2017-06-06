@@ -11,13 +11,8 @@
   padding: 15px 0px;
 }
 
-input {
-  padding: 8px;
-}
-
-label {
+.room-modal-body text {
   color: grey;
-  font-weight: normal;
 }
 
 .room-modal-footer {
@@ -27,7 +22,7 @@ label {
 .cancel-button {
   background-color: whitesmoke;
   border: none;
-  padding: 10px 30px;
+  padding: 10px 45px;
   color: grey;
 }
 

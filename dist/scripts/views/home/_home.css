@@ -36,6 +36,14 @@
 }
  */
 
+.left-side-button {
+  color: grey;
+  background-color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
 .room-names {
   color: grey;
 }
