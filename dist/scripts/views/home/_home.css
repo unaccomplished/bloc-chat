@@ -24,7 +24,7 @@
 }
 
 /*This makes button squish when overflow-x scroll is engaged*/
-/* .title-header-button {
+ /*.title-header-button {
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
@@ -33,8 +33,8 @@
 .user-login {
   display: flex;
   justify-content: flex-start;
-}
- */
+}*/
+
 
 .left-side-button {
   color: grey;
