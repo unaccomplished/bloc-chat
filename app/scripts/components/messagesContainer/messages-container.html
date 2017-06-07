@@ -10,4 +10,6 @@
         <span class="sent-at">{{ message.sentAt | date : 'medium' }}</span>
       </div>
     </div>
+
+    <send-message room-id="$ctrl.room.$id"></send-message>
 </div>

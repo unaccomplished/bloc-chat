@@ -8,39 +8,45 @@
 
 .left-side {
   background-color: lightgrey;
-  padding: 15px 30px;
+  padding: 15px 20px;
   display: flex;
   height: 100%;
-  width: 30vw;
+  width: 38rem;
   flex-direction: column;
   overflow-x: scroll;
 }
 
 .right-side {
   height: 100%;
-  overflow-x: scroll;
+  overflow: hidden;
   position: relative;
   width: 70vw;
 }
 
+.title-header {
+  margin: 0;
+}
+
 /*This makes button squish when overflow-x scroll is engaged*/
- /*.title-header-button {
+ .title-header-button {
   display: flex;
-  justify-content: flex-start;
-  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .user-login {
   display: flex;
-  justify-content: flex-start;
-}*/
+  justify-content: space-between;
+  text-transform: capitalize;
+}
 
 
 .left-side-button {
   color: grey;
   background-color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 0 20px;
+  height: 30px;
   border-radius: 4px;
 }
 

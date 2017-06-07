@@ -5,6 +5,8 @@
 .message-table {
   display: flex;
   flex-direction: column;
+  height: 100%;
+  overflow-y: scroll;
 }
 
 .message-stripe:nth-child(2n+1) {
@@ -29,4 +31,10 @@
 .sent-at {
   color: grey;
   padding: 15px 30px;
+}
+
+.messages-container {
+  display: flex;
+flex-direction: column;
+height: 95vh;
 }
