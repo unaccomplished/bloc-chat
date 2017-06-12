@@ -16,12 +16,14 @@
 .message-stripe {
   display: flex;
   justify-content: space-between;
+  align-items: stretch;
+  overflow: hidden;
+  min-height: 50px;
 }
 
 .name-content {
   display: flex;
   flex-direction: column;
-  padding: 15px 30px;
 }
 
 .user-name {
@@ -35,6 +37,6 @@
 
 .messages-container {
   display: flex;
-flex-direction: column;
-height: 95vh;
+  flex-direction: column;
+  height: 91vh;
 }

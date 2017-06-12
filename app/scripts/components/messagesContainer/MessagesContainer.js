@@ -10,13 +10,18 @@
       controller: messagesContainerCtrl
     }
 
-    function messagesContainerCtrl(Message) {
+    function messagesContainerCtrl(Message, $filter) {
       var $ctrl = this; //required for all components
 
       $ctrl.$onChanges = onChanges;
+      $ctrl.formatDate = formatDate;
       // $ctrl.$onInit = onInit;
       // $ctrl.$postLink = postLink;
       // $ctrl.$onDestroy = onDestroy;
+
+      function formatDate(date) {
+        return $filter('date')(new Date(date), 'medium');
+      }
 
       function onChanges() {
         // console.log($ctrl.room) This is to test if $ctrl.room was updating when a new room was clicked

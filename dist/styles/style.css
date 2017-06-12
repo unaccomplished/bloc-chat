@@ -13,7 +13,12 @@ input {
   padding: 8px;
 }
 
-label {
+label.modal-label {
   color: grey;
   font-weight: normal;
+}
+
+
+.modal-dialog {
+  width: 350px;
 }

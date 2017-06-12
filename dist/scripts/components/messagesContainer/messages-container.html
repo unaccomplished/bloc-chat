@@ -7,7 +7,7 @@
           <span class="user-name">{{message.username}}</span>
           <span class="message-content">{{message.content}}</span>
         </div>
-        <span class="sent-at">{{ message.sentAt | date : 'medium' }}</span>
+        <span class="sent-at">{{ $ctrl.formatDate(message.sentAt) }}</span>
       </div>
     </div>
 
