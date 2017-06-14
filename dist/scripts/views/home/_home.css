@@ -1,0 +1,58 @@
+.home {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.left-side {
+  background-color: lightgrey;
+  padding: 15px 20px;
+  /*display: flex;  This was causing the buttons to get squished when screen height is too short.*/
+  height: 100%;
+  width: 38rem;
+  flex-direction: column;
+  overflow-x: auto;
+}
+
+.right-side {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 70vw;
+}
+
+.title-header {
+  margin: 0;
+}
+
+/*This makes button squish when overflow-x scroll is engaged*/
+ .title-header-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-login {
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
+}
+
+.left-side-button {
+  color: grey;
+  background-color: white;
+  border: none;
+  padding: 0 20px;
+  height: 30px;
+  border-radius: 4px;
+}
+
+.room-names-section {
+  padding: 10px 0;
+}
+
+.room-names {
+  color: grey;
+}

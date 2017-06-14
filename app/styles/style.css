@@ -1,1 +1,24 @@
-/*@import '../views/home/home.css';*/
+@import '../scripts/views/home/_home.css';
+@import '../scripts/components/messagesContainer/_messages-container.css';
+@import '../scripts/components/setUsernameModal/_set-username-modal.css';
+@import '../scripts/components/sendMessage/_send-message.css';
+@import '../scripts/components/addRoom/_add-room-modal.css';
+
+.error-message {
+  color: red;
+  font-weight: bold;
+}
+
+input {
+  padding: 8px;
+}
+
+label.modal-label {
+  color: grey;
+  font-weight: normal;
+}
+
+
+.modal-dialog {
+  width: 350px;
+}

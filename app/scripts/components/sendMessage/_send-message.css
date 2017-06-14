@@ -1,0 +1,32 @@
+send-message {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+}
+
+.send-message {
+  width: 100%;
+}
+
+.message-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.message-input {
+  flex: 1;
+  padding: 12px;
+  border-style: solid;
+  border-color: gainsboro;
+  background: whitesmoke;
+}
+
+.send-button {
+  background-color: dimgrey;
+  color: white;
+  border: none;
+  padding: 13px 25px;
+}

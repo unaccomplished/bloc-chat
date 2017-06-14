@@ -3,8 +3,8 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Bloc Chat</title>
-    <link rel="stylesheet" href="/styles/style.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
     <ui-view></ui-view>
@@ -17,6 +17,7 @@
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-animate.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-sanitize.js"></script>
     <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.5.0.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-cookies.js"></script>
 
     <!-- Firebase Config -->
     <script>
@@ -33,8 +34,13 @@
 
     <!-- App -->
     <script src="/scripts/app.js"></script>
+    <script src="/scripts/services/angular-cookies.js"></script>
     <script src="/scripts/services/Room.js"></script>
+    <script src="/scripts/services/Message.js"></script>
     <script src="/scripts/views/home/HomeCtrl.js"></script>
     <script src="/scripts/components/addRoom/AddRoomModal.js"></script>
+    <script src="/scripts/components/messagesContainer/MessagesContainer.js"></script>
+    <script src="/scripts/components/setUsernameModal/SetUsernameModal.js"></script>
+    <script src="/scripts/components/sendMessage/SendMessage.js"></script>
 </body>
 </html>

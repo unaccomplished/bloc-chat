@@ -12,8 +12,12 @@
     function addRoomModalCtrl() {
       var $ctrl = this;
 
-      $ctrl.ok = function () {
-        $ctrl.close({$value: $ctrl.roomName});
+      $ctrl.ok = function(roomName) {
+        if ($ctrl.roomName !== "") {
+          $ctrl.close({$value: $ctrl.roomName});
+        } else {
+          $ctrl.errorMessage = "Room name must include characters";
+        }
       };
 
       $ctrl.cancel = function () {
