@@ -9,11 +9,11 @@
 .left-side {
   background-color: lightgrey;
   padding: 15px 20px;
-  display: flex;
+  /*display: flex;  This was causing the buttons to get squished when screen height is too short.*/
   height: 100%;
   width: 38rem;
   flex-direction: column;
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 
 .right-side {
@@ -40,7 +40,6 @@
   text-transform: capitalize;
 }
 
-
 .left-side-button {
   color: grey;
   background-color: white;
@@ -48,6 +47,10 @@
   padding: 0 20px;
   height: 30px;
   border-radius: 4px;
+}
+
+.room-names-section {
+  padding: 10px 0;
 }
 
 .room-names {
